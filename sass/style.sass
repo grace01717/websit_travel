@@ -1,0 +1,79 @@
+*
+  // border: solid 1px
+  font-family: 微軟正黑體
+  
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+  
+header.jumbotron
+  text-align: center
+  background-image: url("https://www.iread.com.tw/ProductFile/B000402229-1.jpg")
+  background-size: cover
+  background-position: center center
+  padding: 170px
+  color: #222
+  
+section
+  text-align: center
+  padding: 80px 0px
+  .section-heading
+    font-size: 36px
+    margin-top: 0px
+  .section-subheading
+    font-size: 16px
+.col-sea
+  padding: 90px
+  img
+    width: 100%
+    border-radius: 50%
+
+section.story
+  background-color: #eee
+  .col-md-6
+    padding: 20px
+  .icon-sea
+    width: 80px
+    margin-bottom: 20px
+    
+section.pictures
+  padding: 0px
+  color: #00BFFF		
+  .col-md-6
+    padding: 150px
+    cursor: pointer
+    &:hover
+      p
+        opacity: 0.8 
+      &:before
+        filter: brightness(0.5)
+        background-size: auto 140%
+    &:before
+      content: ""
+      display: block
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      z-index: -1
+      transition-duration: 0.5s
+      background-position: center center
+  .pic1:before
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Piles_of_Salt_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006_a.jpg/800px-Piles_of_Salt_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006_a.jpg")
+    background-size: auto 120%
+  .pic2:before
+    background-image: url("https://www.galilee.com.tw/Upfiles/EDUp/files/01_Itin/LIM/01_itinpoint/03_Hotel/03-Hotel_36.png")
+    background-size: auto 120% 
+  p
+    opacity: 0.6
+    transition-duration: 0.5s
+  
+    
+// debug用
+// section,header
+//   display: none
+// section.pictures
+//   display: block
+section.ask
+  background-color: #01233C
+  color: white
